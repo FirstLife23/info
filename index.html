@@ -31,37 +31,35 @@
         text-decoration: none;
     }
     .info{
-        box-sizing: border-box;
-        width: 70%;
-        height: 500px;
-        border-style: dotted;
-        border: 4px solid rgb(0, 0, 0);
-        border-radius: 10px;
-        margin-top: 50px;
-        margin-left: auto;
+        margin-left: 5px;
         margin-right: auto;
-        padding: 20px;
     }
     p.a{
         margin-top: 50px;
         margin-left: 7px;
     }
     input{
-        width: 200px;
+        width: auto;
         height: 40px;
     }
     p.b{
         margin-left: 25px; 
-    }
-    p.c{
-        margin-left: 6px;
     }
     p.name{
         margin-top: 10px;
     }
     input.c{
         width: 70%;
-        height: 150px;
+        height: 100px;
+    }
+    input[text]{
+        color: aliceblue;
+    }
+    button{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 60px;
     }
 </style>
 
@@ -71,20 +69,27 @@
         <div class="container">
             <h1>البيــانات</h1><br>
             <hr>
-                <div class="info">
-        <b>
-                <p class="name">اسم الآعلان: <input type="text" "></p>
-                <p class="a">رقم الهاتف:<input type="text"> </p>
-                    <br>
-                    <br>
-                <p class="b">العنوان:<input type="text"></p>
-                    <br>
-                    <br>
-                <p class="c"> المعلومات:<input class="c" type="text"></p>     
+                <div class="info"><b><br><br>
+    <!--اسم الاعلان -->
+            <label>اسم الاعلان</label>
+            <input type="text"><br><br>
+    <!--رقم الهاتف لصاحب الاعلان -->
+                    <label>رقم الهـاتف</label>
+                    <input type="text"></p><br><br>
+    <!--العنوان-->
+                    <label>العنوان</label>
+                    <input type="text" style="margin-left: 20px;"></p><br><br>
+    <!--معلومات الاعلان-->        
+                <label> المعلومات</label>
+                    <input class="c" type="text" style="margin-left: 5px;"></p>     
         </b>
-        
+                <br>
+                <hr>
                 </div>
-                <button style="display: block; background-color: rgb(46, 113, 238); width: 300px; height: 60px;margin-left: auto;margin-right: auto; margin-top: 10px; text-align: center;font-size: large;font-weight: bold;color: rgb(250, 250, 250);"> نشر الاعلان </button>
+                <br>
+                <br>
+    <!--زر لأطلاق الاعلان في شات الاعبين -->
+                <button style="display: block; background-color: rgb(46, 113, 238);font-size: large;font-weight: bold;color: rgb(250, 250, 250);"> نشر الاعلان </button>
             </div>
 </body>
 </html>
